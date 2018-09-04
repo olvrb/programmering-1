@@ -4,3 +4,9 @@ C:\Users\oliver.boudet\RiderProjects\lucktext\lucktext\obj\Debug\lucktext.csproj
 C:\Users\oliver.boudet\RiderProjects\lucktext\lucktext\obj\Debug\lucktext.csproj.CoreCompileInputs.cache
 C:\Users\oliver.boudet\RiderProjects\lucktext\lucktext\obj\Debug\lucktext.exe
 C:\Users\oliver.boudet\RiderProjects\lucktext\lucktext\obj\Debug\lucktext.pdb
+C:\Users\oliver.boudet\RiderProjects\programmering-1\lucktext\lucktext\bin\Debug\lucktext.exe
+C:\Users\oliver.boudet\RiderProjects\programmering-1\lucktext\lucktext\bin\Debug\lucktext.pdb
+C:\Users\oliver.boudet\RiderProjects\programmering-1\lucktext\lucktext\obj\Debug\lucktext.csprojResolveAssemblyReference.cache
+C:\Users\oliver.boudet\RiderProjects\programmering-1\lucktext\lucktext\obj\Debug\lucktext.csproj.CoreCompileInputs.cache
+C:\Users\oliver.boudet\RiderProjects\programmering-1\lucktext\lucktext\obj\Debug\lucktext.exe
+C:\Users\oliver.boudet\RiderProjects\programmering-1\lucktext\lucktext\obj\Debug\lucktext.pdb

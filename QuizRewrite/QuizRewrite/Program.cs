@@ -1,12 +1,30 @@
 ﻿using System;
+using System.CodeDom;
+using System.Runtime.CompilerServices;
+using System.Threading;
 
 namespace QuizRewrite {
     internal static class Program {
         public static void Main(string[] args) {
             // score, obv.
             int score = 0;
+            // beautiful ascii art
+            // creative name, isn't it?
+            Console.WriteLine($@"   ____        _      ____        _     
+  / __ \      (_)    / __ \      (_)    
+ | |  | |_   _ _ ___| |  | |_   _ _ ____
+ | |  | | | | | |_  / |  | | | | | |_  /
+ | |__| | |_| | |/ /| |__| | |_| | |/ / 
+  \___\_\\__,_|_/___|\___\_\\__,_|_/___|
+                                        
+                                        ");
+            Thread.Sleep(1000);
+            Console.Clear();
+            Console.WriteLine("Press number keys to answer the questions.\nPress any key to continue...");
+            Console.ReadKey();
+            Console.Clear();
+            
             // Create new questions
-
             QuizQuestion Q1 = new QuizQuestion("What is Sweden's king's name?",
                                                new string[] {"Carl XVI Gustaf", "Folke Hubertus X", "Louis XVI", "Carl XI Gustav"},
                                                ConsoleKey.D1);
@@ -17,7 +35,7 @@ namespace QuizRewrite {
                                                    "To the power of, like in math.", "It is the bitwise XOR operator.",
                                                    "It acts like the plus sign.", "It is a method which writes a string to the console."
                                                }, ConsoleKey.D2);
-            QuizQuestion[] Questions = new QuizQuestion[] {Q1, Q2, Q3}; // make a list so we can iterate through all questions easily
+            QuizQuestion[] Questions = {Q1, Q2, Q3}; // make a list so we can iterate through all questions easily
             foreach (QuizQuestion question in Questions) {
                 Console.WriteLine(question.Question + "                                                  Score: " +
                                   score);                           // start off with printing the question

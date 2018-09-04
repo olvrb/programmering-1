@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Security;
 
 namespace lucktext {
-    internal static class Program {
+    internal class Program {
         public static void Main(string[] args) {
             string sentence = "The quick brown <name> jumps over the <adjective1> <adjective2> dog.";
             Console.Write(sentence + "\nInput a name: ");
