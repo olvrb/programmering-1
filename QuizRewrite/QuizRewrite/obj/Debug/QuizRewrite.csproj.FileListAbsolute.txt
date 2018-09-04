@@ -1,0 +1,6 @@
+C:\Users\oliver.boudet\RiderProjects\QuizRewrite\QuizRewrite\bin\Debug\QuizRewrite.exe
+C:\Users\oliver.boudet\RiderProjects\QuizRewrite\QuizRewrite\bin\Debug\QuizRewrite.pdb
+C:\Users\oliver.boudet\RiderProjects\QuizRewrite\QuizRewrite\obj\Debug\QuizRewrite.csprojResolveAssemblyReference.cache
+C:\Users\oliver.boudet\RiderProjects\QuizRewrite\QuizRewrite\obj\Debug\QuizRewrite.csproj.CoreCompileInputs.cache
+C:\Users\oliver.boudet\RiderProjects\QuizRewrite\QuizRewrite\obj\Debug\QuizRewrite.exe
+C:\Users\oliver.boudet\RiderProjects\QuizRewrite\QuizRewrite\obj\Debug\QuizRewrite.pdb
