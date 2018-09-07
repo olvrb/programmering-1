@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QuizRewrite {
     class QuizQuestion {
@@ -10,12 +6,12 @@ namespace QuizRewrite {
         public readonly string[]   Answers;
         public readonly ConsoleKey RightAnswerKey;
 
-        public QuizQuestion(string Question, string[] Answers, ConsoleKey RightAnswerKey) {
-            this.Answers = new string[Answers.Length - 1];
-            this.Answers = Answers;
+        public QuizQuestion(string question, string[] answers, ConsoleKey rightAnswerKey) {
+            this.Answers = new string[answers.Length - 1];
+            this.Answers = answers;
 
-            this.Question       = Question;
-            this.RightAnswerKey = RightAnswerKey;
+            this.Question       = question;
+            this.RightAnswerKey = rightAnswerKey;
         }
     }
 }
