@@ -1,0 +1,7 @@
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\GetText\GetText\obj\Debug\GetText.csprojResolveAssemblyReference.cache
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\GetText\GetText\obj\Debug\GetText.csproj.CoreCompileInputs.cache
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\GetText\GetText\bin\Debug\GetText.exe.config
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\GetText\GetText\bin\Debug\GetText.exe
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\GetText\GetText\bin\Debug\GetText.pdb
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\GetText\GetText\obj\Debug\GetText.exe
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\GetText\GetText\obj\Debug\GetText.pdb

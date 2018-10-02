@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Security;
 
 namespace lucktext {
     internal class Program {
@@ -17,7 +15,7 @@ namespace lucktext {
             Console.ReadKey();
         }
 
-        private static string FormatString(string toBeFormatted, string name, string adj, string adj2) {
+        private static string FormatString(string toBeFormatted, string name, string adj, string adj2) { // i'm doing this tto avoid having to copypaste the sentence string
             // this is bad code
             return toBeFormatted
                    .Replace("<name>", name)

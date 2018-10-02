@@ -15,11 +15,13 @@ namespace QuizRewrite {
             // Initialize a new instance of the SpeechSynthesizer.  
             SpeechSynthesizer synth = new SpeechSynthesizer();
             synth.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Adult);
+
             // Configure the audio output.   
             synth.SetOutputToDefaultAudioDevice();
 
             // score, obv.
             int score = 0;
+
             // Create new questions
             QuizQuestion q1 = new QuizQuestion("What is Sweden's king's name?",
                                                new string[] {"Carl XVI Gustaf", "Folke Hubertus X", "Louis XVI", "Carl XI Gustav"},
@@ -31,11 +33,13 @@ namespace QuizRewrite {
                                                    "To the power of, like in math.", "It is the bitwise XOR operator.",
                                                    "It acts like the plus sign.", "It is a method which writes a string to the console."
                                                }, ConsoleKey.D2);
-            QuizQuestion q4 = new QuizQuestion("What is the answer to everything", new string[] { "42", "69", "420", "1337" }, ConsoleKey.D1);
+            QuizQuestion   q4        = new QuizQuestion("What is the answer to everything", new string[] {"42", "69", "420", "1337"}, ConsoleKey.D1);
             QuizQuestion[] questions = {q1, q2, q3, q4}; // make a list so we can iterate through all questions easily
-            Random rand    = new Random();
+
+            // Randomize question order.
+            Random             rand                    = new Random();
             List<QuizQuestion> randomizedQuizQuestions = questions.OrderBy(c => rand.Next()).ToList();
-            
+
             // beautiful ascii art
             // creative name, isn't it?
             Console.WriteLine($@"
@@ -72,13 +76,12 @@ namespace QuizRewrite {
                 synth.Speak("Congratulations");
             }
             else {
-                synth.Speak("You suck, you fucking piece of shit."); // 
+                synth.Speak("You suck, you fucking piece of shit.");
             }
 
             Console.Clear();
             Console.WriteLine("Final score: " + score + "/" + questions.Length); // print final score \o/
             Console.ReadKey();
-            
         }
     }
 }

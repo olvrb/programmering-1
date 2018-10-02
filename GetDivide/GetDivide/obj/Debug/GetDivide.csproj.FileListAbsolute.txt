@@ -1,0 +1,6 @@
+C:\Users\oliver.boudet\RiderProjects\GetDivide\GetDivide\bin\Debug\GetDivide.exe
+C:\Users\oliver.boudet\RiderProjects\GetDivide\GetDivide\bin\Debug\GetDivide.pdb
+C:\Users\oliver.boudet\RiderProjects\GetDivide\GetDivide\obj\Debug\GetDivide.csprojResolveAssemblyReference.cache
+C:\Users\oliver.boudet\RiderProjects\GetDivide\GetDivide\obj\Debug\GetDivide.csproj.CoreCompileInputs.cache
+C:\Users\oliver.boudet\RiderProjects\GetDivide\GetDivide\obj\Debug\GetDivide.exe
+C:\Users\oliver.boudet\RiderProjects\GetDivide\GetDivide\obj\Debug\GetDivide.pdb
