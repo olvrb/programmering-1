@@ -30,6 +30,7 @@ namespace GetText {
         static readonly string[] validStrings =  { "hejsan", "båt", "skola" };
         static readonly string[] InvalidStrings = { "ö", "skolinspektion", "hearthstone" };
         static bool checkString(string checkee) {
+            // This is what's called spaghetti code.
             if (Array.IndexOf(validStrings, checkee) > -1) {
                 return true;
             } 

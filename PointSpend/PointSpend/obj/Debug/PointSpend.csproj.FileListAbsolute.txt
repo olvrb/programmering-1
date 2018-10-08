@@ -4,3 +4,9 @@ C:\Users\oliver.boudet\RiderProjects\PointSpend\PointSpend\obj\Debug\PointSpend.
 C:\Users\oliver.boudet\RiderProjects\PointSpend\PointSpend\obj\Debug\PointSpend.csproj.CoreCompileInputs.cache
 C:\Users\oliver.boudet\RiderProjects\PointSpend\PointSpend\obj\Debug\PointSpend.exe
 C:\Users\oliver.boudet\RiderProjects\PointSpend\PointSpend\obj\Debug\PointSpend.pdb
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\PointSpend\PointSpend\bin\Debug\PointSpend.exe
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\PointSpend\PointSpend\bin\Debug\PointSpend.pdb
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\PointSpend\PointSpend\obj\Debug\PointSpend.csprojResolveAssemblyReference.cache
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\PointSpend\PointSpend\obj\Debug\PointSpend.csproj.CoreCompileInputs.cache
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\PointSpend\PointSpend\obj\Debug\PointSpend.exe
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\PointSpend\PointSpend\obj\Debug\PointSpend.pdb

@@ -18,8 +18,7 @@ namespace PointSpend {
                 }
                 catch (Exception e) {
                     keepGoing = true;
-                    Console.WriteLine(e);
-                    throw;
+                    Console.WriteLine("Input was not in the correct format. Please input a number.");
                 }
 
                 if (!validate(input)) {
@@ -33,7 +32,7 @@ namespace PointSpend {
         }
 
         static bool validate(int num) {
-            return num > 0 && num <= 12;
+            return num > 0 && num < 13;
         }
     }
 }
