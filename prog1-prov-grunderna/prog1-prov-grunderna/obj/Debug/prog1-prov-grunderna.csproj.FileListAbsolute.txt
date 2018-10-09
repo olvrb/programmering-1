@@ -1,0 +1,7 @@
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\prog1-prov-grunderna\prog1-prov-grunderna\bin\Debug\prog1-prov-grunderna.exe.config
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\prog1-prov-grunderna\prog1-prov-grunderna\bin\Debug\prog1-prov-grunderna.exe
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\prog1-prov-grunderna\prog1-prov-grunderna\bin\Debug\prog1-prov-grunderna.pdb
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\prog1-prov-grunderna\prog1-prov-grunderna\obj\Debug\prog1-prov-grunderna.csprojResolveAssemblyReference.cache
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\prog1-prov-grunderna\prog1-prov-grunderna\obj\Debug\prog1-prov-grunderna.csproj.CoreCompileInputs.cache
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\prog1-prov-grunderna\prog1-prov-grunderna\obj\Debug\prog1-prov-grunderna.exe
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\prog1-prov-grunderna\prog1-prov-grunderna\obj\Debug\prog1-prov-grunderna.pdb
