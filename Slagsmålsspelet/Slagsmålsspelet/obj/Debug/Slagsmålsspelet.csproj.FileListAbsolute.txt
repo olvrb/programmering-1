@@ -1,0 +1,14 @@
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\Slagsmålsspelet\Slagsmålsspelet\bin\Debug\Slagsmålsspelet.exe.config
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\Slagsmålsspelet\Slagsmålsspelet\bin\Debug\Slagsmålsspelet.exe
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\Slagsmålsspelet\Slagsmålsspelet\bin\Debug\Slagsmålsspelet.pdb
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\Slagsmålsspelet\Slagsmålsspelet\obj\Debug\Slagsmålsspelet.csprojResolveAssemblyReference.cache
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\Slagsmålsspelet\Slagsmålsspelet\obj\Debug\Slagsmålsspelet.csproj.CoreCompileInputs.cache
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\Slagsmålsspelet\Slagsmålsspelet\obj\Debug\Slagsmålsspelet.exe
+c:\users\oliver.boudet\documents\visual studio 2017\Projects\Slagsmålsspelet\Slagsmålsspelet\obj\Debug\Slagsmålsspelet.pdb
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\Slagsmålsspelet\Slagsmålsspelet\bin\Debug\Slagsmålsspelet.exe.config
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\Slagsmålsspelet\Slagsmålsspelet\bin\Debug\Slagsmålsspelet.exe
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\Slagsmålsspelet\Slagsmålsspelet\bin\Debug\Slagsmålsspelet.pdb
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\Slagsmålsspelet\Slagsmålsspelet\obj\Debug\Slagsmålsspelet.csprojResolveAssemblyReference.cache
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\Slagsmålsspelet\Slagsmålsspelet\obj\Debug\Slagsmålsspelet.csproj.CoreCompileInputs.cache
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\Slagsmålsspelet\Slagsmålsspelet\obj\Debug\Slagsmålsspelet.exe
+C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\Slagsmålsspelet\Slagsmålsspelet\obj\Debug\Slagsmålsspelet.pdb
