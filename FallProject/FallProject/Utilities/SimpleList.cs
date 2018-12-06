@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -7,11 +6,7 @@ namespace FallProject.Utilities {
         private string _listAsStrings;
 
         // TODO: find alternative to dynamic type.
-        public SimpleList(dynamic input) {
-            if (!(input is string) && !(input is List<string>)) {
-                throw new ArgumentException("Only accepts string or List<string>.");
-            }
-
+        public SimpleList(List<string> input) {
             SetList(input);
         }
 
@@ -33,6 +28,7 @@ namespace FallProject.Utilities {
                                          .Select(Base64Utilities.Base64Decode)
                                          .ToList();
 
+        // Because we want so enclose everything as much as possible.
         public string GetRawList() => _listAsStrings;
 
         public List<string> Add(string item) {

@@ -4,18 +4,17 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Discord;
 using Discord.Addons.Interactive;
-using FallProject.Handlers;
 using Discord.Commands;
 using Discord.WebSocket;
-using FallProject.Models;
+using FallProject.Handlers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FallProject {
     public class Program {
         private const string              Prefix = "!";
-        public        DiscordSocketClient _client;
         private       CommandService      _commands;
         private       IServiceProvider    _services;
+        public        DiscordSocketClient Client;
         private       string              Token { get; set; }
 
         /* SimpleList tests */
@@ -40,23 +39,23 @@ namespace FallProject {
             // I know there are better ways to do configuration files, but this was the fastest and easiest I could think of
             // (same goes for the database connection string).
             Token     = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "token.txt")).Trim();
-            _client   = new DiscordSocketClient();
+            Client    = new DiscordSocketClient();
             _commands = new CommandService();
             _services = new ServiceCollection()
-                        .AddSingleton(_client)
+                        .AddSingleton(Client)
                         .AddSingleton(_commands)
                         .AddSingleton<InteractiveService>()
                         .BuildServiceProvider();
 
             // Bind event listeners.
-            _client.Log            += Log;
-            _client.MessageUpdated += MessageEdit;
+            Client.Log            += Log;
+            Client.MessageUpdated += MessageEdit;
 
             await RegisterCommandsAsync();
 
-            await _client.LoginAsync(TokenType.Bot, Token);
+            await Client.LoginAsync(TokenType.Bot, Token);
 
-            await _client.StartAsync();
+            await Client.StartAsync();
 
             // Don't, stop me now...
             await Task.Delay(-1);
@@ -68,14 +67,13 @@ namespace FallProject {
         }
 
         private async Task RegisterCommandsAsync() {
-            _client.MessageReceived += HandleCommandAsync;
+            Client.MessageReceived += HandleCommandAsync;
             await _commands.AddModulesAsync(Assembly.GetEntryAssembly());
         }
 
 
         private async Task HandleCommandAsync(SocketMessage arg) {
-            Console.WriteLine(arg.Content);
-            await MessageCreateHandler.CreateMessage(arg, _client);
+            await MessageCreateHandler.CreateMessage(arg, Client);
             if (!(arg is SocketUserMessage message) || message.Author.IsBot || message.Author.IsWebhook) {
                 return;
             }
@@ -85,8 +83,8 @@ namespace FallProject {
 
             // Make sure the message starts with the prefix, or mentions the CurrentUser
             if (message.HasStringPrefix(Prefix, ref argPos) ||
-                message.HasMentionPrefix(_client.CurrentUser, ref argPos)) {
-                SocketCommandContext context = new SocketCommandContext(_client, message);
+                message.HasMentionPrefix(Client.CurrentUser, ref argPos)) {
+                SocketCommandContext context = new SocketCommandContext(Client, message);
 
                 IResult res = await _commands.ExecuteAsync(context, argPos, _services);
                 if (!res.IsSuccess) {
@@ -97,7 +95,7 @@ namespace FallProject {
 
         private async Task MessageEdit(Cacheable<IMessage, ulong> before, SocketMessage message,
                                        ISocketMessageChannel      channel) {
-            await MessageEditHandler.EditMessage(message, _client);
+            await MessageEditHandler.EditMessage(message, Client);
         }
     }
 }

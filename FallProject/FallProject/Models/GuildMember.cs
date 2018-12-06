@@ -1,4 +1,3 @@
-using System;
 using System.Threading.Tasks;
 using Discord.WebSocket;
 using Microsoft.EntityFrameworkCore;
@@ -34,7 +33,10 @@ namespace FallProject.Models {
                 GuildMember oldMember =
                     await dbContext.GuildMembers.FirstOrDefaultAsync(x => x.Id      == member.Id &&
                                                                           x.GuildId == member.Guild.OwnerId);
-                if (oldMember is null) await CreateOrUpdate(member);
+                if (oldMember is null) {
+                    await CreateOrUpdate(member);
+                }
+
                 oldMember.Xp = 10;
                 await dbContext.SaveChangesAsync();
             }

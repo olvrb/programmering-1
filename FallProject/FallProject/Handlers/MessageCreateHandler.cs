@@ -2,7 +2,6 @@ using System.Threading.Tasks;
 using Discord.Commands;
 using Discord.WebSocket;
 using FallProject.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace FallProject.Handlers {
     public static class MessageCreateHandler {
