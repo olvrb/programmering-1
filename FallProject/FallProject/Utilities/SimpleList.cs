@@ -5,7 +5,6 @@ namespace FallProject.Utilities {
     public class SimpleList {
         private string _listAsStrings;
 
-        // TODO: find alternative to dynamic type.
         public SimpleList(List<string> input) {
             SetList(input);
         }

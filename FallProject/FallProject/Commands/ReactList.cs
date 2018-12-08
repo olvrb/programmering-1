@@ -8,6 +8,7 @@ using Discord.WebSocket;
 namespace FallProject.Commands {
     public class ReactList : InteractiveBase<SocketCommandContext> {
         // "NextMessageAsync" has blocking calls, so the method has to be run in asynchronous mode.
+        
         [Command("list", RunMode = RunMode.Async)]
         public async Task ReactListCommand(params string[] options) {
             bool            hasSelectedValue = false;
