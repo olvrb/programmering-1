@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Discord.Addons.Interactive;
 using Discord.Commands;
@@ -8,13 +9,13 @@ using Discord.WebSocket;
 namespace FallProject.Commands {
     public class ReactList : InteractiveBase<SocketCommandContext> {
         // "NextMessageAsync" has blocking calls, so the method has to be run in asynchronous mode.
-        
         [Command("list", RunMode = RunMode.Async)]
         public async Task ReactListCommand(params string[] options) {
             bool            hasSelectedValue = false;
             int             currentIndex     = 0;
             string          sendString       = "";
             RestUserMessage listMessage      = await Context.Channel.SendMessageAsync("Please wait...");
+            Debug.Assert(!(listMessage is null));
 
             // Keep waiting for input until the user has selected an option (hit enter).
             while (!hasSelectedValue) {
@@ -41,7 +42,7 @@ namespace FallProject.Commands {
                 // Get input from user.
                 SocketMessage msg = await NextMessageAsync();
 
-                // Delete the command the user gave (note: this doesn't delete the msg variable, so i can still access its content).
+                // Delete the command the user gave (note: this doesn't delete the msg variable, so I can still access its content).
                 await msg.DeleteAsync();
 
                 switch (msg.Content.ToLower()) {
