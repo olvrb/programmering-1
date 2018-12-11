@@ -15,8 +15,7 @@ namespace FallProject.Commands {
             int             currentIndex     = 0;
             string          sendString       = "";
             RestUserMessage listMessage      = await Context.Channel.SendMessageAsync("Please wait...");
-            Debug.Assert(!(listMessage is null));
-
+    
             // Keep waiting for input until the user has selected an option (hit enter).
             while (!hasSelectedValue) {
                 // Clear the string (similar to Console.Clear).
