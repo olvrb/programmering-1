@@ -5,12 +5,11 @@ using System.Linq;
 namespace GetDivide {
     internal class Program {
         public static void Main(string[] args) {
-            //Spinner spin = new Spinner(0,0);
             int input = 0;
             try {
-                input = int.Parse(Console.ReadLine());
+                input = int.Parse(Console.ReadLine() ?? throw new Exception("Exited"));
             }
-            catch (Exception e) {
+            catch (Exception) {
                 Console.WriteLine("Please input a number.");
                 // R E C U R S I O N
                 Main(args);
@@ -23,15 +22,8 @@ namespace GetDivide {
             }   
         }
 
-        static IEnumerable<int> GetDivide(int max, int min = 0) {
-            List<int> nums = new List<int>();
-            for (int i = 0; min < max; i++) {
-                if (i % 3 == 0) {
-                    nums.Add(i);
-                }
-            }
-
-            return nums;
+        private static IEnumerable<int> GetDivide(int max, int min = 0) {
+            return Enumerable.Range(min, max).Where(i => i % 3 == 0).ToList();
         }
     }
 }
