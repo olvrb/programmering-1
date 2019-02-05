@@ -10,3 +10,9 @@ C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmer
 C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\GetDivide\GetDivide\obj\Debug\GetDivide.csproj.CoreCompileInputs.cache
 C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\GetDivide\GetDivide\obj\Debug\GetDivide.exe
 C:\Users\oliver.boudet\Documents\Visual Studio 2017\Projects\langs\c#\programmering-1\GetDivide\GetDivide\obj\Debug\GetDivide.pdb
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetDivide\GetDivide\obj\Debug\GetDivide.csprojAssemblyReference.cache
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetDivide\GetDivide\obj\Debug\GetDivide.csproj.CoreCompileInputs.cache
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetDivide\GetDivide\obj\Debug\GetDivide.exe
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetDivide\GetDivide\obj\Debug\GetDivide.pdb
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetDivide\GetDivide\bin\Debug\GetDivide.exe
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetDivide\GetDivide\bin\Debug\GetDivide.pdb
