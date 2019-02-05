@@ -35,7 +35,7 @@ namespace FallProject {
                          .GetAwaiter()
                          .GetResult();
 
-        public async Task RunBotAsync() {
+        private async Task RunBotAsync() {
             // Load the Discord token from token.txt.
             // I know there are better ways to do configuration files, but this was the fastest and easiest I could think of
             // (same goes for the database connection string).
@@ -48,7 +48,7 @@ namespace FallProject {
                         .AddSingleton<InteractiveService>()
                         .BuildServiceProvider();
 
-            // Bind event listeners.
+            // Subscribe to event listeners.
             Client.Log            += Log;
             Client.MessageUpdated += MessageEdit;
 

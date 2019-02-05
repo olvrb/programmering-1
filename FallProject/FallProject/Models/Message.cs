@@ -12,6 +12,7 @@ namespace FallProject.Models {
         public ulong  AuthorId      { get; set; }
         public string EditsAsString { get; set; }
 
+        // TODO: merge these methods.
         public static async Task Create(SocketCommandContext context) {
             using (FallprojectContext dbContext = new FallprojectContext()) {
                 // Add the message to the database.

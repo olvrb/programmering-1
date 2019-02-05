@@ -43,14 +43,12 @@ namespace FallProject.Utilities {
             return SetList(tempList);
         }
 
-        public static List<string> CreateListFromBase64SimpleList(string input) {
-            return input
-                   .Split(",")
-                   // Remove empty indexes.
-                   .Where(x => !string.IsNullOrEmpty(x))
-                   // Decode each index from base64.
-                   .Select(Base64Utilities.Base64Decode)
-                   .ToList();
-        }
+        public static List<string> CreateListFromBase64SimpleList(string input) => input
+                                                                                   .Split(",")
+                                                                                   // Remove empty indexes.
+                                                                                   .Where(x => !string.IsNullOrEmpty(x))
+                                                                                   // Decode each index from base64.
+                                                                                   .Select(Base64Utilities.Base64Decode)
+                                                                                   .ToList();
     }
 }

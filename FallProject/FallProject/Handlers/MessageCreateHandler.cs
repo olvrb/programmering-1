@@ -14,6 +14,7 @@ namespace FallProject.Handlers {
             SocketCommandContext context = new SocketCommandContext(client, message as SocketUserMessage);
             await Message.Create(context);
             await GuildMember.CreateOrUpdate(context.Guild.CurrentUser);
+            // await GuildMember.AddXp(context.Guild.CurrentUser);
         }
     }
 }

@@ -35,8 +35,12 @@ namespace FallProject.Models {
                                                                           x.GuildId == member.Guild.OwnerId);
                 if (oldMember is null) {
                     await CreateOrUpdate(member);
+                    oldMember = await dbContext.GuildMembers.FirstOrDefaultAsync(x => x.Id == member.Id &&
+                                                                                      x.GuildId ==
+                                                                                      member.Guild.OwnerId);
                 }
 
+                // We previously create the member if it doesn't exist.
                 oldMember.Xp = 10;
                 await dbContext.SaveChangesAsync();
             }
