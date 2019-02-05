@@ -17,15 +17,15 @@ namespace GetDivide {
             }
             
             // Sure I could do a reverse forloop but foreach is 👌.
-            IEnumerable<int> nums = GetDivide(input).Reverse();
+            IEnumerable<int> nums = GetDivide(min: 0, max: input).Reverse();
             foreach (int num in nums) {
                 Console.WriteLine(num);
             }   
         }
 
-        static IEnumerable<int> GetDivide(int max) {
+        static IEnumerable<int> GetDivide(int max, int min = 0) {
             List<int> nums = new List<int>();
-            for (int i = 0; i < max; i++) {
+            for (int i = 0; min < max; i++) {
                 if (i % 3 == 0) {
                     nums.Add(i);
                 }
