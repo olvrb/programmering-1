@@ -8,17 +8,20 @@ using System.Threading.Tasks;
 namespace GetText {
     class Program {
         static void Main(string[] args) {
-            string inp = GetText(1, 10);
+            List<string> str = new List<string>();
+            for (int i = 0; i < 5; i++) {
+                str.Add(GetText(2, 7));
+            }
         }
 
-        static string GetText(int boundMin, int boundMax) {
+        private static string GetText(int boundMin, int boundMax) {
             bool isValid = false;
             string tempIn = "";
             while (!isValid) {
+                Console.Write($"enter text between {boundMin} and {boundMax} characters: ");
                 tempIn = Console.ReadLine();
                 if ((tempIn.Length > boundMin && tempIn.Length < boundMax) && checkString(tempIn)) {
                     isValid = true;
-                    break;
                 }
                 else {
                     isValid = false;
@@ -27,11 +30,11 @@ namespace GetText {
             return tempIn; // placeholder
         }
 
-        static readonly string[] validStrings =  { "hejsan", "båt", "skola" };
-        static readonly string[] InvalidStrings = { "ö", "skolinspektion", "hearthstone" };
+        private static readonly string[] ValidStrings =  { "hejsan", "båt", "skola" };
+        private static readonly string[] InvalidStrings = { "ö", "skolinspektion", "hearthstone" };
         static bool checkString(string checkee) {
             // This is what's called spaghetti code.
-            if (Array.IndexOf(validStrings, checkee) > -1) {
+            if (Array.IndexOf(ValidStrings, checkee) > -1) {
                 return true;
             } 
             else if (Array.IndexOf(InvalidStrings, checkee) > -1) {

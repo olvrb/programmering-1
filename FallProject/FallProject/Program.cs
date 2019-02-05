@@ -11,10 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FallProject {
     public class Program {
+        public        DiscordSocketClient Client;
         private const string              Prefix = "!";
         private       CommandService      _commands;
         private       IServiceProvider    _services;
-        public        DiscordSocketClient Client;
         private       string              Token { get; set; }
 
         /* SimpleList tests */
@@ -30,9 +30,10 @@ namespace FallProject {
 
 
         // ReSharper disable once UnusedParameter.Local
-        private static void Main(string[] args) => new Program().RunBotAsync()
-                                                                .GetAwaiter()
-                                                                .GetResult();
+        private static void Main(string[] args) =>
+            new Program().RunBotAsync()
+                         .GetAwaiter()
+                         .GetResult();
 
         public async Task RunBotAsync() {
             // Load the Discord token from token.txt.
@@ -93,7 +94,8 @@ namespace FallProject {
             }
         }
 
-        private async Task MessageEdit(Cacheable<IMessage, ulong> before, SocketMessage message,
+        private async Task MessageEdit(Cacheable<IMessage, ulong> before,
+                                       SocketMessage              message,
                                        ISocketMessageChannel      channel) {
             await MessageEditHandler.EditMessage(message, Client);
         }

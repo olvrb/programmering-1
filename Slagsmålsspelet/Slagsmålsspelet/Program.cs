@@ -6,6 +6,7 @@ namespace Slagsmålsspelet {
         static void Main(string[] args) {
             SpeechSynthesizer synth = new SpeechSynthesizer();
             synth.SetOutputToDefaultAudioDevice();
+            synth.SelectVoiceByHints(VoiceGender.Male);
             synth.Rate = 2;
             Console.Write("Name for player 1: ");
             Player player1 = new Player(Console.ReadLine());

@@ -5,3 +5,10 @@ c:\users\oliver.boudet\documents\visual studio 2017\Projects\GetText\GetText\bin
 c:\users\oliver.boudet\documents\visual studio 2017\Projects\GetText\GetText\bin\Debug\GetText.pdb
 c:\users\oliver.boudet\documents\visual studio 2017\Projects\GetText\GetText\obj\Debug\GetText.exe
 c:\users\oliver.boudet\documents\visual studio 2017\Projects\GetText\GetText\obj\Debug\GetText.pdb
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetText\GetText\bin\Debug\GetText.exe.config
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetText\GetText\bin\Debug\GetText.exe
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetText\GetText\bin\Debug\GetText.pdb
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetText\GetText\obj\Debug\GetText.csprojAssemblyReference.cache
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetText\GetText\obj\Debug\GetText.csproj.CoreCompileInputs.cache
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetText\GetText\obj\Debug\GetText.exe
+C:\Users\oliver.boudet\Documents\Projects\langs\c#\programmering-1\GetText\GetText\obj\Debug\GetText.pdb
