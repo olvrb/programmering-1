@@ -16,7 +16,7 @@ namespace GetDivide {
             }
             
             // Sure I could do a reverse forloop but foreach is 👌.
-            IEnumerable<int> nums = GetDivide(min: 0, max: input).Reverse();
+            IEnumerable<int> nums = GetDivide(max: input).Reverse();
             foreach (int num in nums) {
                 Console.WriteLine(num);
             }   
