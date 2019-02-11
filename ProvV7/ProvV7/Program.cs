@@ -25,6 +25,8 @@ namespace ProvV7 {
             }
 
 
+            
+            // O(n)
             for (int i = 0; i < students; i++) {
                 Console.WriteLine($"Getting name for student #{i}.");
                 studentNames.Add(GetName(false));
