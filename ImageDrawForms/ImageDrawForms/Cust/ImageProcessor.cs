@@ -40,7 +40,7 @@ namespace ImageDrawForms {
             for (int i = 0; i < image.Width; i++) {
                 for (int j = 0; j < image.Height; j++) {
                     Color pxl = image.GetPixel(i, j);
-                    if (colorsAreClose(pxl, _old)) {
+                    if (ColorsAreClose(pxl, _old)) {
                         image.SetPixel(i, j, _new);
                     }
                 }
@@ -50,7 +50,7 @@ namespace ImageDrawForms {
         }
 
         // https://stackoverflow.com/a/25168506/8611114
-        private static bool colorsAreClose(Color a, Color z, int threshold = 175) {
+        private static bool ColorsAreClose(Color a, Color z, int threshold = 175) {
             int r = a.R - z.R;
             int g = a.G - z.G;
             int b = a.B - z.B;
