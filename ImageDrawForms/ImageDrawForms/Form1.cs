@@ -18,10 +18,12 @@ namespace ImageDrawForms {
             _image = new CImage();
 
             // In case we're loading a huge file...
-            pictureBox1.CreateGraphics().DrawString("Loading...", new Font("Arial", 14), new SolidBrush(Color.Black), 0, 0);
+            pictureBox1
+                .CreateGraphics()
+                .DrawString("Loading...", new Font("Arial", 14), new SolidBrush(Color.Black), 0, 0);
 
             // Non-blocking, to stop the UI from freezing.
-            Utils.DispatchAsync(() => UpdateImage());
+            Utils.DispatchAsync(UpdateImage);
         }
 
         private void button2_Click(object sender, EventArgs e) {

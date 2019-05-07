@@ -50,7 +50,7 @@ namespace ImageDrawForms {
         }
 
         // https://stackoverflow.com/a/25168506/8611114
-        private static bool colorsAreClose(Color a, Color z, int threshold = 50) {
+        private static bool colorsAreClose(Color a, Color z, int threshold = 175) {
             int r = a.R - z.R;
             int g = a.G - z.G;
             int b = a.B - z.B;

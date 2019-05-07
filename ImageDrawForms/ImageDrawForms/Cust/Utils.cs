@@ -6,8 +6,7 @@ using System.Windows.Forms;
 namespace ImageDrawForms {
     internal static class Utils {
         public static Color GetColorFromPrompt() {
-            ColorDialog dia = new ColorDialog();
-            dia.AllowFullOpen = true;
+            ColorDialog dia = new ColorDialog {AllowFullOpen = true};
             dia.ShowDialog();
             return dia.Color;
         }
