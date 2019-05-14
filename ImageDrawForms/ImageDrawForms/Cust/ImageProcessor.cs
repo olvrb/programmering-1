@@ -18,18 +18,21 @@ namespace ImageDrawForms {
                     image.SetPixel(i, j, Color.FromArgb(pixel.ToArgb() ^ 0xffffff));
                 }
             }
-
+            
             return image;
         }
 
         public static Bitmap Mirror(this Bitmap image, MirrorType type) {
             switch (type) {
-                case MirrorType.Vertical:
+                case MirrorType.Vertical: {
                     image.RotateFlip(RotateFlipType.RotateNoneFlipY);
                     break;
-                case MirrorType.Horizontal:
+                }
+
+                case MirrorType.Horizontal: {
                     image.RotateFlip(RotateFlipType.RotateNoneFlipX);
                     break;
+                }
             }
 
             return image;

@@ -4,12 +4,12 @@ using System.Windows.Forms;
 
 namespace ImageDrawForms {
     public partial class Form1 : Form {
-        public Form1() {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
+        // Actual image to be displayed in the pbox.
         private CImage _image { get; set; }
 
+        // Color picker placeholder variables.
         private Color _oldColor { get; set; }
         private Color _newColor { get; set; }
 
@@ -27,24 +27,28 @@ namespace ImageDrawForms {
         }
 
         private void button2_Click(object sender, EventArgs e) {
+            // Avoid NullReferenceException
             if (_image == null) {
-                imageIsNull();
+                ImageIsNull();
                 return;
             }
 
             _image.Save();
         }
 
-        private void imageIsNull() {
+        private static void ImageIsNull() {
             MessageBox.Show("Please select an image before proceeding.");
         }
 
         private void UpdateImage() {
+            
+            // Update the picturebox with the new, modified image.
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.Image    = _image.Image;
         }
 
         private void MirrorButton_Click(object sender, EventArgs e) {
+            // Mirror image, then update.
             _image.ApplyEffects(new[] {CImage.Effects.HorizontalMirror});
             UpdateImage();
         }
@@ -85,9 +89,11 @@ namespace ImageDrawForms {
         }
 
         private void PictureBox1_DoubleClick(object sender, EventArgs e) {
+            // Bad attempt at making a zoom-like feature...
             int  zoom    = 2;
             Size newSize = new Size(_image.Image.Width * zoom, _image.Image.Height * zoom);
             _image.Image = new Bitmap(_image.Image, newSize);
+            this.UpdateImage();
         }
     }
 }

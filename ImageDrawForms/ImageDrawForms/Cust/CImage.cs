@@ -4,14 +4,16 @@ using System.Drawing;
 using System.Windows.Forms;
 
 namespace ImageDrawForms {
-    // All methods except save return this to allow method chaining, LINQ style.
+    // All methods except save return a CImage to allow method chaining, LINQ style.
     internal class CImage {
+        /// All effects that can be applied using <see cref="CImage.ApplyEffects"/>.
         public enum Effects {
             HorizontalMirror,
             VerticalMirror,
             Invert
         }
 
+        // Select a file from prompt and store it in the Image variable.
         public CImage() {
             try {
                 Image = new Bitmap(Utils.GetFileFromPrompt());
@@ -34,22 +36,33 @@ namespace ImageDrawForms {
             Current++;
             foreach (Effects efc in effects) {
                 switch (efc) {
-                    case Effects.HorizontalMirror:
+                    case Effects.HorizontalMirror: {
                         Mirror(ImageProcessor.MirrorType.Horizontal);
                         break;
-                    case Effects.VerticalMirror:
+                    }
+
+                    case Effects.VerticalMirror: {
                         Mirror(ImageProcessor.MirrorType.Vertical);
                         break;
-                    case Effects.Invert:
+                    }
+
+                    case Effects.Invert: {
                         Invert();
                         break;
+                    }
+
+                    default: {
+                        throw new ArgumentOutOfRangeException();
+                    }
                 }
             }
 
             return this;
         }
 
+        
         public CImage Undo() {
+            // Compare without modifying variable...
             if (Current - 1 <= 0) {
                 return this;
             }
@@ -59,6 +72,7 @@ namespace ImageDrawForms {
             return this;
         }
 
+        // Save image to file.
         public CImage Save() {
             SaveFileDialog dialog = new SaveFileDialog();
             if (dialog.ShowDialog() == DialogResult.OK) {
@@ -75,12 +89,18 @@ namespace ImageDrawForms {
 
         private CImage Mirror(ImageProcessor.MirrorType type) {
             switch (type) {
-                case ImageProcessor.MirrorType.Vertical:
+                case ImageProcessor.MirrorType.Vertical: {
                     Image = Image.Mirror(ImageProcessor.MirrorType.Vertical);
                     break;
-                case ImageProcessor.MirrorType.Horizontal:
+                }
+
+                case ImageProcessor.MirrorType.Horizontal: {
                     Image = Image.Mirror(ImageProcessor.MirrorType.Horizontal);
                     break;
+                }
+
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(type), type, null);
             }
 
             return this;
