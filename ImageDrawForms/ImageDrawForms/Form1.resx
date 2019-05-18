@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CImage_CImage_File_not_found_or_invalid_image_file_" xml:space="preserve">
-    <value>File not found or invalid image file.</value>
-  </data>
 </root>
