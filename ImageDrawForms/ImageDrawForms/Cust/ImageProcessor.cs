@@ -6,6 +6,14 @@ namespace ImageDrawForms {
             Vertical,
             Horizontal
         }
+        
+        /// Pseudocode for <see cref="Invert"/>
+        ///
+        /// för varje pixel i image:
+        ///     hämta pixel vid position x, y
+        ///     sätt pixel till motsatsen med hjälp av xor
+        /// returnera image
+
 
         // Extension methods!
         public static Bitmap Invert(this Bitmap image) {
@@ -21,6 +29,7 @@ namespace ImageDrawForms {
             
             return image;
         }
+        
 
         public static Bitmap Mirror(this Bitmap image, MirrorType type) {
             switch (type) {
@@ -37,6 +46,14 @@ namespace ImageDrawForms {
 
             return image;
         }
+        
+        /// Pseudocode for <see cref="Replace"/>
+        /// for varje pixel i image:
+        ///     hämta pixel vid x, y
+        ///     om färg är nära till _old:
+        ///         sätt hämtad pixel till _new
+        /// returnera image
+        ///        
 
         public static Bitmap Replace(this Bitmap image, Color _old, Color _new) {
             // Iterate over all pixels.
